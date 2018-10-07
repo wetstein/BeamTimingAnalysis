@@ -58,7 +58,24 @@ Zarko
 
 ## Instructions on How to Parse the LBNF Simulations
 
+The dk2nu files have a more complicated structure. There are several branches:
+* decay
+* nuray
+* ancestor
+* traj
+...in addition to a few other variables
 
+ancestor_ gives the number of particles in the decay chain
+
+nuray gives the momenta of the neutrinos
+ancestor gives detailed information about the particles in the decay chain, wherhe ancestor_-1 is the nuetrino, -2 is the direct parent, etc
+decay gives information on the decay that produced the particles (need to check on the details of that)
+
+decay_nimpwt is the overall beam weight
+
+but in the dk2nu files, there is a second weighting factor the reweights the existing decays for different angular acceptances corresponding to different baselines.
+
+nuray_wgt[i] corresponds to this reweighting for different baselines. I forget what i=0 corresponds to but i=1 is near detector and i=2 is far detector
 
 
 ## Instructions on How to Parse the BNB Simulations
