@@ -62,3 +62,17 @@ Zarko
 
 
 ## Instructions on How to Parse the BNB Simulations
+
+ini_pos[i][j] and ini_mom[i][j] are the initial position and momentum of the relavant particles. The second index (j) is the coordinate, where 0=x, 1=y, 2=z. The first index is step in the decay chain, counting backwards. So i=0 is the neutrino, whereas i=1,2,etc corresponds to successively earlier generations of parent particle.
+
+ini_t[i] is the initial time, indexed by step in the decay chain.
+ini_eng[i] is likewise the initial energy
+
+npart is the number of particles in the decay chain
+
+ntp is the neutrino type
+
+id[i] is the particle id, counting backwards down the decay chain. So, i=1, is the direct parent of the neutrino
+
+beamwgt is the beam weighting
+
