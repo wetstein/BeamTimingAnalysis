@@ -1,7 +1,7 @@
 # Beam Simulations
 
 
-*From Laura Fields on the LBNF beam simulations:*
+## From Laura Fields on the LBNF beam simulations:
 
 Hi,
 
@@ -20,7 +20,7 @@ Basically, the beam will come in spills of 7.5e13 protons/spill. The spills will
 -Laura
 
 
-*From Zarko Pavlovic on the LBNF Files:*
+## From Zarko Pavlovic on the LBNF Files:
 
 Hi Matt,
 
@@ -34,3 +34,31 @@ To run:
 This would loop over input file (could be multiple files with * and they'll get chained), and output flux histograms calculated at the location (x,y,z)=(0,0,100000)cm. It fills total flux, flux broken by immediate parent, flux broken by particle produced in initial proton interaction. (I used this for BNB, so histogram titles say pBe, but of course it is whatever you use in beam MC.)
 
 Zarko
+
+
+## From Zarko on the BNB files: 
+
+Hi Matt,
+
+I think I have similar files that were produced for SBND somewhere with more stats. These are intermediate files, so I'll have to look around a bit, but I believe they are somewhere on disk. However,  the ones that I made for SBND don't have multisim weight (which you might want for systematics).  I can make more files like the ones you are looking at. I just made few for Marcus to start looking at them and once we agree that they make sense the plan was for me to generate more. Since you are now looking at them and they seem reasonable, I can go ahead and generate more.
+
+NuMI and LBNF use different format. The newest one that is used is called dk2nu (https://cdcvs.fnal.gov/redmine/projects/dk2nu/wiki/Wiki). Bit more complicated, but still not too bad :). It should contain pretty much same info, just the names of the variables will be different.
+
+For NuMI you can likely get newer flux files from Minerva or NOvA. Leo Aliaga did a lot of flux work on Minerva. For more official request I'd ask spokespeople. Btw, Laura is also one of the conveners of beam group on DUNE so she can help with DUNE as well. I am a co-convener, but still in training :). Don't know yet where the most recent flux files are. I'll have to ask Laura and she is away this week...
+
+Zarko
+
+
+Hey Matt,
+
+I started adding files to /annie/data/flux/redecay_bnb . Let me know if you have any problems with new files. Probably it is going to take few days to get all the files, but already now there are ~150 new files.
+
+Zarko
+
+
+## Instructions on How to Parse the LBNF Simulations
+
+
+
+
+## Instructions on How to Parse the BNB Simulations
