@@ -135,9 +135,25 @@ Timing \sep Timing
 \section{Introduction}
 \label{sec:intro}
 
+The discovery of Charge-parity (CP) violation in the neutrino sector hinges on high precision, increasingly systematics-dominated measurements of neutrino oscillation parameters. The dominant systematic uncertainties
 
+The wide span of energies in neutrino beams stems from the wide range of energies among the parent hadrons and is limited by the ability to cool and focus those beams. One handle for understanding.
 
+Another handle for understanding and selecting different energy spectra within a neutrino beam exploits the differing velocities of the parent hadrons. Lower energy pions and kaons travel more slowly, especially as they approach sub-relativistic energies. As a consequence, lower energy neutrinos start further behind the rest of the bunch and selecting later arriving neutrinos would provide an increasingly pure low-energy subset of the overall flux.
 
+The idea of using timing to resolve beam structure has a long history. Efforts to detect dark matter have relied on time-of-flight differences between dark matter particles and neutrinos. Timing has successfully been employed to identify a pure sample of stopped kaons and pions in neutrino beams. Several notable efforts have utilized bunch timing to place limits on neutrino velocity. MINOS, in particular, noted interesting kinematic relationships within the beam time. The MiniBooNE collaboration even explored the idea of using timing to select on the neutrino energy spectrum. However, efforts to select different energy spectra on the basis of beam timing have been largely overlooked due to two considerations: (1) Limited time resolutions of the detectors themselves were insufficient to see the O(100) psec effect, and (2) the $\sim$900 psec spread of the proton bunch impinging on the target washes out most of the effect.
+
+In this paper, we revisit the idea of using beam timing to select different energy components of the neutrino flux. We show that existing precision timing technology is capable of resolving O(100) psec time-of-flight differences in neutrinos arrival times. {\it More importantly, we argue that feasible modifications to existing proton beams could superimpose a hyper-fine bunch structure on the protons, providing short enough bunches, spaced widely enough to fully exploit the energy spreading effect.}
+
+The power of this technique stems from the fact that, in contrast to off-axis measurements, the different neutrino energy spectra can be selected within the same detector. Moreover, these timing relationships can be applied in near and far detector alike.
+
+\begin{figure}[t]
+	\begin{center}
+           	\includegraphics[width=0.45 \linewidth]{Figures/10.10.18_LBNFtiming/DUNEbeam_truetimingB.pdf}
+	\end{center}
+	\caption{The DUNE forward horn current flux (red), with the fluxes corresponding to increasingly later time-cuts on the bunch time, assuming no time spread of the protons on target: 250 psec after the start of the neutrino bunch (orange), 500 psec after (yellow), 750 psec (dark beige), 1 nsec (light beige).}
+		\label{fig:anniedetector}
+\end{figure}
 
 
 \section{The Mechanism}
@@ -147,15 +163,11 @@ A brief discussion of the relationship between pion energy and speed
 \begin{figure}[t]
 	\begin{center}
            	\begin{tabular}{c c}	
-			\includegraphics[width=0.5 \linewidth]{} &
-            \includegraphics[width=0.5 \linewidth]{} \\
-
-            \multicolumn{2}{c}{\includegraphics[width=1.0 \linewidth]{EventStrip}}
+           	\includegraphics[width=0.45 \linewidth]{Figures/14.10.18_LBNFtiming/parentEvsdT.pdf} &
+			\includegraphics[width=0.45 \linewidth]{Figures/14.10.18_LBNFtiming/nuEvsdT.pdf} \\
 			\end{tabular}
 	\end{center}
-	\caption{ TOP LEFT: A concept drawing of the Phase~I ANNIE detector system. 
-    TOP~RIGHT:~A concept drawing of the complete Phase~II detector.
-    BOTTOM:~A series of 4 panels showing a typical ANNIE event (from left to right). A prompt muon produced in the fiducial volume is reconstructed using the MRD and photodetectors in the water volume. Neutrons produced by the neutrino interaction scatter around and thermalize. After a few tens of microseconds, each neutron is captured on Gd, producing light from an 8~MeV gamma cascade.}
+	\caption{LEFT: The relationship between the arrival times and pion energies, for a population of pions produced at the same time. RIGHT: ..}
 		\label{fig:anniedetector}
 \end{figure}
 
@@ -168,6 +180,20 @@ The impact of energy uncertainty on precision oscillation measurements. How slic
 \section{Impact of Bunch Size on the Effect}
 
 Just showing that wider bunches wash out the effect (short section)
+
+\begin{figure}[t]
+	\begin{center}
+           	\begin{tabular}{c c}	
+           	\includegraphics[width=0.45 \linewidth]{Figures/10.10.18_LBNFtiming/DUNEbeam_truetimingB.pdf} &
+			\includegraphics[width=0.45 \linewidth]{Figures/10.10.18_LBNFtiming/DUNEbeam_100psecB.pdf} \\
+           	\includegraphics[width=0.45 \linewidth]{Figures/10.10.18_LBNFtiming/DUNEbeam_250psecB.pdf} &
+			\includegraphics[width=0.45 \linewidth]{Figures/10.10.18_LBNFtiming/DUNEbeam_900psecB.pdf}
+			 \\			
+			\end{tabular}
+	\end{center}
+	\caption{LEFT: The relationship between the arrival times and pion energies, for a population of pions produced at the same time. RIGHT: ..}
+		\label{fig:anniedetector}
+\end{figure}
 
 
 \section{Superimposing a Fine Bunch Structure at 500 MHz: Concept and Feasibility}
