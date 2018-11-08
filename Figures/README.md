@@ -2,6 +2,8 @@
 
 ### June 3 2018 figures
 
+Booster Neutrino Beam fluxes with time cuts.
+
 ### October 10 2018 figures
 
 These were produced with the outputs from running the dk2nuTree script on 67 LBNF neutrino-mode flux files:
@@ -28,3 +30,21 @@ time_pion_wrongsignpi(blue)kaon(green) shows the arrival time distribution (true
 * purple:            pi+
 * light blue:        pi-
 * green:             K+
+
+### October 14 2018 figures
+
+2D temperature plots of parent hadron energy versus neutrino arrival time and neutrino energy versus neutrino
+arrival time.
+
+### November 7 2018 figures
+
+RHCbeamcontent: The arrival time distribution of the neutrino beam (dark blue line), overlaid with the arrival time
+distribution of the anti-neutrinos (blue shaded) and the arrival time distribution of neutrino contamination (red).
+
+RHCbeamcontent_log: same plot, but on a log scale
+
+RHCbeamE: The RHC beam energy spectrum for antineutrinos (blue) and neutrinos (red)
+
+RHCbeamE_100psec_cut: same plot, but requiring neutrino arrival times after 100 psec
+
+RHCbeamE_200psec_cut: same plot, but requiring neutrino arrival times after 200 psec
