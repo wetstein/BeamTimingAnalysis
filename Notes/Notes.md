@@ -15,3 +15,18 @@ Main injector is 7 times the Booster diameter, but only 6 of the 7 slots are tak
 
 On average the RMS bunch length is ~1 nsec
 It's a bit complicated because of the slip-stacking
+Bunches are spaced 20 nsec apart in each bucket
+
+Need to rebunch fast so as not to expand the plateau...
+
+Superconducting cavity - large aperture (commercially available)
+you can buy it
+
+9-10-11 harmonic
+
+~$2M for a single cavity
+MI-60
+the fact that it's crygenic gives him pause
+50 msec/1sec (5%) affect on the POT delivered
+Don't need to go into engineering details to build a cavity
+400 psec, RMS closer to 100 psec
