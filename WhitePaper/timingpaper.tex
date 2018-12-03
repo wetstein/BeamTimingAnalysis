@@ -75,7 +75,7 @@
 
 %% Title, authors and addresses
 
-\title{A Stroboscopic Approach to Neutrino Oscillometry}
+\title{Adding Precision Time Structure to Neutrino Beams for Energy and Flavor Discrimination}
 
 %% use the tnoteref command within \title for footnotes;
 %% use the tnotetext command for the associated footnote;
@@ -102,23 +102,21 @@
 %% \address[label1]{<address>}
 %% \address[label2]{<address>}
 
-\author{J. Doe}
-
-\address{University of Amazements; Anywhere, USA}
+\author{Andrey Elagin[UofC], Jonathan Eisch[ISU], Henry Frisch[UofC], Sergei Nagaitsev[Fermilab,UofC], Matthew Wetstein[ISU]}
+\address[UofC]{Enrico Fermi Institute, University of Chicago, Chicago IL 60637}
+\address[Fermilab]{Fermi National Laboratory, Batavia IL 60510}
+\address[ISU]{Matt to Fill in}
 
 \begin{abstract}
 %% Text of abstract
-New advances in technology have enabled the detailed resolution of substructure in neutrino beams. A number of notable analyses by the MINOS and MiniBooNE collaborations have already looked at detailed features in the arrival time of neutrino bunches. Pushing that capability to even finer time scales, it becomes possible to select different neutrino energy spectra based on their arrival time of the neutrinos relative to the bunch time. Later neutrinos within the bunch correspond to slower and therefore lower energy parent hadrons. We show that this effect could be resolved by detectors with order 100 psec vertex time resolution, but is limited by the current bunch size of the protons impinging on the target. Efforts to shorten the width of neutrino bunches to below 500 psec would greatly enhance this effect. The ability to reconstruct neutrino oscillations, selecting for different neutrino energy spectra would greatly control against flux and energy reconstruction uncertainties. Off-axis experiments can only sample a small slice of the angular flux spectrum. A stroboscopic approach would be analogous to sampling multiple off-axis angles within a single detector, and could be applied equally to both near and far detectors in an oscillation experiment. This motivates the continued development of time-of-flight capabilities in neutrino detectors, as well as further optimiztion of neutrino beams. 
-
-
+New advances in photodetector technology may enable the detailed resolution of energy and flavor substructure in neutrino beams. A number of notable analyses by the MINOS and MiniBooNE collaborations have  looked at detailed features in the arrival time of neutrino bunches. Pushing that capability to finer time scales would allow selecting different neutrino energy and flavor spectra based on the arrival time of the neutrinos relative to the parent proton bunch time. Later neutrinos correspond to slower, and therefore lower energy, parent hadrons. In addition the fractions of tau, muon, and electron neutrinos (antineutrinos) varies with the arrival time. We show that these effects could be resolved by detectors with order 100 psec vertex time resolution, but that the discrimination is limited by the current bunch size of the protons impinging on the target. Shortening the width of neutrino bunches to well below 500 psec would substantially enhance this effect. As opposed to off-axis experiments, which  can only sample a small slice of the angular flux spectrum, this `stroboscopic' approach is analogous to sampling multiple off-axis angles with on-axis detectors, and is applied equally to both near and far detectors in an oscillation experiment. 
 \end{abstract}
 
 
 
 \begin{keyword}
-Timing \sep Timing
+Timing \sep Timing, Neutrino \sep Neutrino, Oscillation \sep Oscillation, RF-Structure \sep RF-Structure, Proton Bunch \sep Proton Bunch
 %% keywords here, in the form: keyword \sep keyword
-
 %% MSC codes here, in the form: \MSC code \sep code
 %% or \MSC[2008] code \sep code (2000 is the default)
 
@@ -135,7 +133,7 @@ Timing \sep Timing
 \section{Introduction}
 \label{sec:intro}
 
-The discovery of Charge-parity (CP) violation in the neutrino sector hinges on high precision, increasingly systematics-dominated measurements of neutrino oscillation parameters. The dominant systematic uncertainties...
+The discovery of Charge-Parity (CP) violation in the neutrino sector hinges on high precision, increasingly systematics-dominated measurements of neutrino oscillation parameters. The dominant systematic uncertainties...
 
 The wide span of energies in neutrino beams stems from the wide range of energies among the parent hadrons and is limited by the ability to cool and focus those beams. One handle for controlling and understanding the beam flux is to look at angles off-axis from the pointing of the beam, a technique notably exploited by the NOvA and T2K experiments.
 
@@ -149,22 +147,50 @@ The power of this technique stems from the fact that, in contrast to off-axis me
 
 \begin{figure}[t]
 	\begin{center}
-           	\includegraphics[width=0.45 \linewidth]{Figures/10.10.18_LBNFtiming/DUNEbeam_truetimingB.pdf}
+           	\includegraphics[width=1.0 \linewidth]{Figures/2018.10.10_LBNFtiming/DUNEbeam_truetimingB.pdf}
 	\end{center}
 	\caption{The DUNE forward horn current flux (red), with the fluxes corresponding to increasingly later time-cuts on the bunch time, assuming no time spread of the protons on target: 250 psec after the start of the neutrino bunch (orange), 500 psec after (yellow), 750 psec (dark beige), 1 nsec (light beige).}
 		\label{fig:anniedetector}
 \end{figure}
 
 
+\begin{figure}[t]
+	\begin{center}
+           	\includegraphics[width=0.8 \linewidth]{Figures/2018.11.07_LBNFtimingRHC/RHCbeamcontent_log.pdf}
+	\end{center}
+	\caption{The time spectrum of anti-neutrinos in reverse horn current mode (blue) overlaid with wrong-sign neutrino contamination in red. The wrong-sign component drops off more quickly.}
+		\label{fig:anniedetector}
+\end{figure}
+
 \section{The Mechanism}
 
-A brief discussion of the relationship between pion energy and speed
+The difference in arrival time of a neutrino from a sub-relativistic pion of energy E' with respect to a high energy pion travelling with speed $\sim$c is given by:
+
+\begin{equation}
+\Delta t(E') = \frac{c - v(E')}{c} \tau (E')
+\end{equation}
+
+Where $\tau (E')$ is the lifetime of the lower energy pion in the lab frame. The time spreading will only occur until the decay of the lower energy pion, at which point the daughter neutrinos will propagate at c. The lifetime of the higher energy pion is irrelevant, since the pion is already propagating at roughly c.
+
+\begin{equation}
+\Delta t(E') = \tau (E') [1 - \beta (E')]
+\end{equation}
+
+\begin{equation}
+\Delta t(E') = (\frac{E'}{m} \tau_0) [1 - \sqrt{ 1 - \frac{m^2}{E'^2}}]
+\end{equation}
+
+\begin{equation}
+\Delta t(E') = [\frac{E'}{m} - [1 - \sqrt{ \frac{E'^2}{m^2} - 1}] \tau_0
+\end{equation}
+
+As one would expect, at the lowest energies, where the pion is essentially at rest in the lab frame, $\Delta t(E')$ approaches the lifetime of the pion in the rest frame, $\tau_0$. At high energies, the speed of the lower-energy pion approaches that of the higher energy pion and thus $\Delta t(E')$ goes to zero. 
 
 \begin{figure}[t]
 	\begin{center}
            	\begin{tabular}{c c}	
-           	\includegraphics[width=0.45 \linewidth]{Figures/14.10.18_LBNFtiming/parentEvsdT.pdf} &
-			\includegraphics[width=0.45 \linewidth]{Figures/14.10.18_LBNFtiming/nuEvsdT.pdf} \\
+           	\includegraphics[width=0.49 \linewidth]{Figures/2018.10.14_LBNFtiming/parentEvsdT.pdf} &
+			\includegraphics[width=0.49 \linewidth]{Figures/2018.10.14_LBNFtiming/nuEvsdT.pdf} \\
 			\end{tabular}
 	\end{center}
 	\caption{LEFT: The relationship between the arrival times and pion energies, for a population of pions produced at the same time. RIGHT: ..}
@@ -184,10 +210,10 @@ Just showing that wider bunches wash out the effect (short section)
 \begin{figure}[t]
 	\begin{center}
            	\begin{tabular}{c c}	
-           	\includegraphics[width=0.45 \linewidth]{Figures/10.10.18_LBNFtiming/DUNEbeam_truetimingB.pdf} &
-			\includegraphics[width=0.45 \linewidth]{Figures/10.10.18_LBNFtiming/DUNEbeam_100psecB.pdf} \\
-           	\includegraphics[width=0.45 \linewidth]{Figures/10.10.18_LBNFtiming/DUNEbeam_250psecB.pdf} &
-			\includegraphics[width=0.45 \linewidth]{Figures/10.10.18_LBNFtiming/DUNEbeam_900psecB.pdf}
+           	\includegraphics[width=0.49 \linewidth]{Figures/2018.10.10_LBNFtiming/DUNEbeam_truetimingB.pdf} &
+			\includegraphics[width=0.49 \linewidth]{Figures/2018.10.10_LBNFtiming/DUNEbeam_100psecB.pdf} \\
+           	\includegraphics[width=0.49 \linewidth]{Figures/2018.10.10_LBNFtiming/DUNEbeam_250psecB.pdf} &
+			\includegraphics[width=0.49 \linewidth]{Figures/2018.10.10_LBNFtiming/DUNEbeam_900psecB.pdf}
 			 \\			
 			\end{tabular}
 	\end{center}
@@ -200,7 +226,7 @@ Just showing that wider bunches wash out the effect (short section)
 
 Talking about how this could be done, how big a change it would be, how hard, etc
 
-\section{Achieving 100 psec Trigger Resolution}
+\section{Achieving 100 psec Relative Timing Resolution}
 
 Jonathan Eisch - getting beam information, making fast triggers, etc
 
