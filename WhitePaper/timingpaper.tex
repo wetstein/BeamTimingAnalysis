@@ -176,25 +176,33 @@ Where $\tau (E')$ is the lifetime of the lower energy pion in the lab frame. The
 \Delta t(E') = \tau (E') [1 - \beta (E')]
 \end{equation}
 
+Rewriting in terms of the pion lifetime in the restframe, $\tau_0$, we get:
+
 \begin{equation}
 \Delta t(E') = (\frac{E'}{m} \tau_0) [1 - \sqrt{ 1 - \frac{m^2}{E'^2}}]
 \end{equation}
 
+Regrouping the equation, we get the relationship:
+
 \begin{equation}
 \Delta t(E') = [\frac{E'}{m} - [1 - \sqrt{ \frac{E'^2}{m^2} - 1}] \tau_0
+\label{eq:beamkinematicsandtiming}
 \end{equation}
 
 As one would expect, at the lowest energies, where the pion is essentially at rest in the lab frame, $\Delta t(E')$ approaches the lifetime of the pion in the rest frame, $\tau_0$. At high energies, the speed of the lower-energy pion approaches that of the higher energy pion and thus $\Delta t(E')$ goes to zero. 
 
+Figure~\ref{fig:beamkinematicsandtiming} shows a plot of equation~\ref{eq:beamkinematicsandtiming} (TOP), and the simulated relationship between $\Delta t(E')$ and E' for the DUNE beam.
+
 \begin{figure}[t]
 	\begin{center}
-           	\begin{tabular}{c c}	
+           	\begin{tabular}{c c}
+           	\multicolumn{2}{c}{\includegraphics[width=0.5 \linewidth]{Figures/2018.12.3_kinematics/deltaTvsE.pdf}}\\
            	\includegraphics[width=0.49 \linewidth]{Figures/2018.10.14_LBNFtiming/parentEvsdT.pdf} &
 			\includegraphics[width=0.49 \linewidth]{Figures/2018.10.14_LBNFtiming/nuEvsdT.pdf} \\
 			\end{tabular}
 	\end{center}
-	\caption{LEFT: The relationship between the arrival times and pion energies, for a population of pions produced at the same time. RIGHT: ..}
-		\label{fig:anniedetector}
+	\caption{TOP: A plot of the peak time difference between the arrival of neutrinos from a sub-relatavistic pion of energy E' with respect to a relativistic pion (Eq~\ref{eq:beamkinematicsandtiming}). BOTTOM LEFT: The simulated relationship between the arrival times and pion energies, for a population of pions produced at the same time. BOTTOM RIGHT: The equivalents plot of arrival time difference for different energies of the neutrinos.}
+		\label{fig:beamkinematicsandtiming}
 \end{figure}
 
 
