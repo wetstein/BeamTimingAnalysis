@@ -11,8 +11,8 @@
    c1->SetBottomMargin(0.1431579);
    c1->SetFrameBorderMode(0);
    c1->SetFrameBorderMode(0);
-   
-   TF1 *KinemFunc = new TF1("KinemFunc","((x/139.4)-sqrt((x^2/139.4^2)-1))*26.033",139,10000);
+
+   TF1* KinemFunc = new TF1("KinemFunc","((x/0.1394)-sqrt((x^2/0.1394^2)-1))*26.033",0.139,16.5);
    KinemFunc->SetFillColor(19);
    KinemFunc->SetFillStyle(0);
    KinemFunc->SetLineColor(4);
