@@ -1,0 +1,162 @@
+%
+% Simple Latex 2e template
+%
+\documentclass[12pt]{article}
+\usepackage[usenames,dvips]{pstcol}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{footnote}
+\usepackage{longtable}
+\usepackage{verbatim}
+\usepackage{array,multirow}
+%\usepackage{titlesec}
+%
+% You can't use subfigure and subcaption at the same time (!)
+%\usepackage{subfigure}
+%\usepackage{subfigure
+% new for subfigures
+\usepackage{graphicx}
+\usepackage{caption}
+%\usepackage{subcaption}
+%
+% Using .ps files with pdflatex
+\usepackage{epstopdf}
+% Instructions- do \includegraphics{file.eps} and then run pdflatex
+%
+%\usepackage{slidesec}
+
+%\input{seminar.bug}
+%\slidesmag{3}
+%\usepackage[letterpaper]{geometry}
+%\usepackage{fancybox}
+%\usepackage{charter}
+%\usepackage{feynmf}
+%\usepackage{fancyhdr}
+%
+% make \paragraph a subsubsubsection
+\setcounter{secnumdepth}{4}
+%\titleformat{\paragraph}
+%{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+%\titlespacing*{\paragraph} {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+%
+%\include{symbols}
+%
+\textwidth 6.8in
+\textheight 9.5in
+\topmargin -0.6in
+\oddsidemargin 0.0in
+\evensidemargin 0.0in
+\parindent 0.5in
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+%
+\def\baselinestretch{1.0}
+%
+\newcommand{\smaller}{\fontsize{8}{12}\selectfont}
+\newrgbcolor{maroon}{.45 0.1 0.1}
+%
+% Try making it behave with figures
+%
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+%
+\def\LAPPDTM{LAPPD\textsuperscript{TM}~}
+\def\LAPPDTMs{LAPPD\textsuperscript{TM}s~}
+\newcommand{\Kzero}{\mbox{$\rm K^{0}$~}}
+%\newcommand{\K}{\mbox{$K$~}}
+%\newcommand{\pi}{\mbox{$\pi$~}}
+%
+% Begin document
+%
+
+\begin{document}
+\pagestyle{plain}
+%\renewcommand{\headrulewidth}{0pt}
+%
+
+\begin{flushright}
+Version 2.0\\
+\today
+\end{flushright}
+%
+% Title
+%
+\begin{center}
+{\Large\bf Energy and Flavor Discrimination Using Precision Time
+  Structure in On-Axis Neutrino Beams}\\
+
+\vskip0.2in
+
+Evan Angelico, Andrey Elagin, Jonathan Eisch, Henry J. Frisch, Sergei
+  Nagaitsev, Matthew Wetstein\\
+
+Addresses etc. (with institution assignments fixed)
+\end{center}
+
+
+%\address[UofC]{Enrico Fermi Institute, University of Chicago, Chicago IL 60637}
+%\address[Fermilab]{Fermi National Laboratory, Batavia IL 60510}
+%\address[ISU]{Matt to Fill in}
+
+
+\begin{abstract}
+
+We propose to use a higher-frequency RF structure 
+to correlate
+neutrino interactions in both near and far on-axis detectors with the
+energy and flavor of each event. Analyses by the MINOS and MiniBooNE
+collaborations have previously looked at detailed features in the
+arrival time of neutrino bunches. Improving the capability to time
+scales of order 100 psec would allow selecting different neutrino
+energy and flavor spectra based on the arrival time of the neutrinos
+relative to the parent proton bunch time. Later neutrinos correspond
+to slower, and therefore lower energy, parent hadrons. In addition the
+fractions of tau, muon, and electron neutrinos and antineutrinos
+varies with the arrival time. The discrimination is currently limited
+by the bunch size of the protons impinging on the target.  We show
+that these effects can be resolved by measuring the pulse shape of
+each proton bunch using muon beam monitors with order 10-20 psec time
+resolution, and correlating the shape of each bunch with the localized
+wave front of the corresponding neutrinos as they traverse the
+detectors.  As opposed to off-axis experiments, which can only sample
+a small slice of the angular flux spectrum, this `stroboscopic'
+approach is analogous to sampling multiple off-axis angles with
+on-axis detectors, and applies equally to both near and far detectors
+in an oscillation experiment.
+\end{abstract}
+
+\vskip-0.5in
+
+\tableofcontents
+\setcounter{tocdepth}{2} 
+
+\newpage
+
+\input{Section_1_Introduction_v1a}
+
+\input{Section_2_Approach_v1a}
+
+\input{Section_3_Fermilab_v1a}
+
+\input{Section_4_Energy_separation_v1a}
+
+\input{Section_5_Spectra_v1a}
+
+\input{Section_6_RF_v1a}
+
+\input{Section_7_Muon_monitors_v1a}
+
+\input{Section_8_Results_v1a}
+
+\input{Section_9_Conclusions_v1a}
+
+\input{Section_10_Acknowledgements_v1a}
+
+\input{Bibliography_v1a}
+
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

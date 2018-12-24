@@ -1,0 +1,725 @@
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
+%%
+\documentclass[preprint,12pt]{elsarticle}
+
+\usepackage{isotope} % \isotope command
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% The graphicx package provides the includegraphics command.
+\usepackage{graphicx}
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+\usepackage{lineno}
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+\journal{Journal Name}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+\title{Energy and Flavor Discrimination Using Precision Time Structure in On-Axis Neutrino Beams}
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+
+\author{Evan Angelico [UofC], Andrey Elagin[UofC], Jonathan Eisch[ISU], Henry Frisch[UofC], Sergei Nagaitsev[Fermilab,UofC], Matthew Wetstein[ISU]}
+\address[UofC]{Enrico Fermi Institute, University of Chicago, Chicago IL 60637}
+\address[Fermilab]{Fermi National Laboratory, Batavia IL 60510}
+\address[ISU]{Matt to Fill in}
+
+\begin{abstract}
+%% Text of abstract
+We propose to use a higher-frequency RF structure and a small array of
+photodetectors with time resolution of order 10-20 psec for muon
+monitoring downstream of the decay volume to correlate neutrino interactions in both near and far on-axis detectors with the
+energy and flavor of each event. Analyses by the MINOS and MiniBooNE
+collaborations have previously looked at detailed features in the
+arrival time of neutrino bunches. Improving the capability to time
+scales of order 100 psec would allow selecting different neutrino
+energy and flavor spectra based on the arrival time of the neutrinos
+relative to the parent proton bunch time. Later neutrinos correspond
+to slower, and therefore lower energy, parent hadrons. In addition the
+fractions of tau, muon, and electron neutrinos and antineutrinos
+varies with the arrival time. The discrimination is currently limited
+by the bunch size of the protons impinging on the target.  We show
+that these effects can be resolved by measuring the pulse shape of
+each proton bunch using muon beam monitors with order 10-20 psec time
+resolution, and correlating the shape of each bunch with the localized
+wave front of the corresponding neutrinos as they traverse the
+detectors.  As opposed to off-axis experiments, which can only sample
+a small slice of the angular flux spectrum, this `stroboscopic'
+approach is analogous to sampling multiple off-axis angles with
+on-axis detectors, and applies equally to both near and far detectors
+in an oscillation experiment.
+\end{abstract}
+
+
+
+\begin{keyword}
+Timing \sep Timing, Neutrino \sep Neutrino, Oscillation \sep Oscillation, RF-Structure \sep RF-Structure, Proton Bunch \sep Proton Bunch
+%% keywords here, in the form: keyword \sep keyword
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+%%
+%% Start line numbering here if you want
+%%
+\linenumbers
+
+%% main text
+\section{Introduction}
+\label{sec:intro}
+
+A deeper understanding of the neutrino sector, including CP violation,
+the mass hierarchy, and deviations from unitarity of the PMNS matrix,
+hinges on high precision, increasingly systematics-dominated
+measurements of neutrino oscillation parameters. One approach to
+reducing the systematic uncertainties is by expanding the range of L/E
+and the mix of lepton family contributions measured {\it
+  simultaneously} in both near and far detectors. Here we present a
+scheme for such measurements at Fermilab using the
+time-of-arrival of on-axis neutrinos at the near and far detectors relative to
+the proton RF structure.
+
+The wide span of energies in neutrino beams stems from the wide range
+of energies of the parent hadrons.  A current technique for optimizing
+the neutrino energy spectrum for measuring oscillations at a given
+detector distance is to look at angles off-axis from the pointing of
+the beam, a technique notably exploited by the NOvA and T2K
+experiments.
+% Matt is this correct?
+
+An alternative method for understanding and selecting different energy
+spectra within a neutrino beam exploits the differing velocities of
+the parent hadrons. Lower energy pions and kaons travel more slowly,
+especially as they approach sub-relativistic energies. As a
+consequence, lower energy neutrinos are created further behind the rest of
+the bunch and selecting later arriving neutrinos would provide an
+increasingly pure low-energy subset of the overall flux (as shown
+below, the time difference from hadron travel outweighs the compensating
+effect that higher energy hadrons live longer.)
+
+The idea of using timing to resolve beam structure has a long
+history. Efforts to detect dark matter have relied on time-of-flight
+differences between dark matter particles and neutrinos. Timing has
+successfully been employed to identify a pure sample of stopped kaons
+and pions in neutrino beams. Several notable efforts have utilized
+bunch timing to place limits on neutrino velocity. MINOS, in
+particular, noted interesting kinematic relationships within the beam
+time. 
+
+The MiniBooNE collaboration has recently explored the idea of using
+timing relative to the RF structure of the proton beam 
+to select on the neutrino energy spectrum. However, efforts to
+select different energy spectra on the basis of beam timing have been
+largely overlooked due to two considerations: (1) Limited time
+resolutions of the detectors themselves were insufficient to see the
+O(100) psec effect, and (2) the $\sim$900 psec spread of the proton
+bunch impinging on the target washes out most of the effect. We
+address both these issues below.
+
+\subsection{Using Higher Frequency Accelerator RF for Energy and Flavor On-Axis
+  Spectral Analysis}
+
+Here we revisit the idea of using beam timing to select different
+energy components of the neutrino flux, but with a higher-frequency RF
+structure superimposed on the proton beam after normal acceleration
+but before extraction. Additionally, we propose that the delay of each
+event with respect to the proton bunch structure is reconstructed from
+the position of the event vertex in the near and far detectors
+relative to the 'zero time' of the RF clock as measured bunch-by-bunch
+with muons from the proton target. Consequently good spatial
+resolution at the detectors is a one-to-one proxy for time
+measurement, enabling detectors such as DUNE or a new large liquid detector to 
+use the technique without modification.
+%The timing of the proton
+%bunches is recorded bunch-by-bunch by a system of fast (10-20 psec)
+%photodetectors detecting muons on and near axis downstream of the
+%decay  volume.
+
+\subsection{Organizational Outline}
+An overview of the `stroboscopic' approach introduced above is
+presented in Section~\ref{approach}. Section~\ref{Fermilab} describes
+the outlines of a first implementation at Fermilab.
+Section~\ref{mechanism} describes the mechanism of energy and flavor
+separation by `time slicing' relative to the parent proton bunch
+structure, and the impact of proton bunch size on the separation.
+Section~\ref{time_sorted_spectra} presents energy spectra for
+electron, muon, and tau neutrinos and anti-neutrinos for time windows
+referenced to the their identified parent proton bunch.
+
+Section~\ref{RF} addresses the accelerator and RF issues of re bunching
+the protons at higher RF frequency, starting with the 53 MHz of the
+Fermilab Main Injection. Bunch profiles are presented from simulations
+of a 500 MHz Cornell RF cavity ramped up as the 53 MHz is ramped
+down. Measuring the profile of each proton bunch relative to a precise
+system clock using muons and a system of fast photodetectors is
+described in Section~\ref{muon_monitor}.  Section~\ref{synchronization}
+describes a scheme for synchronization of the intensity profile of the
+parent proton with the time of a given neutrino
+interaction. Section~\ref{results} summarizes the energy spectra for
+electron, muon, and tau neutrinos and anti-neutrinos for the 500 MHz
+beam profiles of Section~\ref{RF}. Conclusions and areas of needed
+development  are presented in Section~\ref{conclusions}.
+
+%
+%YOUAREHERE
+%
+%\begin{figure}[h]
+%	\begin{center}
+%          	\includegraphics[width=1.0 \linewidth]{Figures/}
+%	\end{center}
+%	\caption{The }
+%\label{fig:wave_fronts}
+%\end{figure}
+
+%
+% Section The Stroboscopic Approach}
+%
+\section{The Stroboscopic Approach}
+\label{approach}
+We have dubbed the time-slicing of neutrino events relative to the
+time of their parent bunch as a 'stroboscopic' approach, as it is
+essentially successive snapshots of the neutrino bunch but with
+different energy spectra and different neutrino family populations in
+each time bin. We describe the basic ingredients of the technique
+below.
+
+\subsection{Timing Relative to Wave Fronts of Zero Time At the Detector}
+\label{wave_front}
+
+The RF structure of the proton beam at the neutrino target imprints
+the interaction rate on the production of the hadrons that are the
+primary source of neutrinos, as indicated in
+Figure~\ref{fig:wave_fronts}. The spacing of the waves is given by the
+period of the RF structure on the proton beam, $\tau$. The width of
+the wave front depends on both the width of the proton bunch in the RF
+bucket convoluted with the difference in time between the
+production of the parent hadrons  at the target and their subsequent
+decay that produces the neutrinos. An additional factor is the
+different path lengths of the parent hadrons through the neutrino
+focusing horn and decay region. 
+
+\begin{figure}[h]
+	\begin{center}
+           	\includegraphics[width=1.0 \linewidth]{Figures/nupaper_waves_IMG_5834_crop.jpg}
+	\end{center}
+	\caption{A `snap-shot' of the neutrino wave-front moving
+          through a neutrino detector.}
+
+	\label{fig:wave_fronts}
+\end{figure}
+
+
+
+\subsection{Time Reference to Proton Bunch-by-Bunch Interaction
+  Profiles at the Target}
+\label{time_reference}
+
+Figure~\ref{fig:bucket_timing} shows the time relationship between the
+RF structure of the protons at the target and the neutrino events in a
+detector at distance L from the target. The period of the RF is
+denoted by $\tau$, and the FWHM of the proton bunch is denoted by
+$\sigma_p$. Each neutrino bunch is offset to a later time from its
+parent proton bunch by approximately $L/c$, where $c$ is the speed of
+light.
+
+The neutrinos from a given proton bunch arrive at the detector before
+a signal can be transmitted using electromagnetism, i.e. real or
+virtual photons. One consequently has to locally record the relevant
+data on a bunch-to-bunch basis at the RF frequency. Each bunch should be
+time stamped at both the target and the detector so that the data from
+target and detector can be re-united
+robustly. Section~\ref{muon_monitor} describes the muon monitor
+systems that provide the data on the time profile of protons on target
+for each bunch. Importantly, measuring the time of the neutrino events in the
+detector, is not necessary, as described below in 
+Section~\ref{position_as_proxy}.
+
+
+
+\begin{figure}[h]
+	\begin{center}
+           	\includegraphics[width=0.7 \linewidth]{Figures/nupaper_timing_IMG_5836_crop.jpg}
+	\end{center}
+	\caption{A 'cartoon' of the correspondence bucket-by-bucket of
+          the neutrino neutrino wave-front timing at the neutrino
+          detector and the protons interacting with the target. The
+          separation is given by the RF period $\tau$, and the FWHM of
+        the proton bunch is denoted by $\sigma_p$.}
+	\label{fig:bucket_timing}
+\end{figure}
+
+%YOUAREHERE
+\subsection{Neutrino Event Vertex Position as a Proxy for Time Measurement at Near or Far Detectors}
+\label{position_as_proxy}
+
+If the proton bucket width $\sigma_p$, is narrow, 
+$\tau$, the neutrino `wave-front' has a well-defined position in the
+detector, moving through the detector at velocity $c$. One
+consequently can use the position of the event vertex as a proxy for
+the time of the neutrino interaction (see
+Figure~\ref{fig:wave_fronts}). Detectors with excellent vertex
+resolution such as DUNE consequently need no additional timing
+capabilities. 
+
+\subsection{Energy and Flavor Spectra Sorted by Time Slice Relative to
+the Parent Proton Bunch}
+\label{spectra}
+
+
+Figure~\ref{fig:wave_fronts} also indicates the `stroboscopic' nature
+of this proposal. Neutrinos from lower energy hadron parents
+(indicated in red) arrive in a distribution that tends 
+later than neutrinos from higher energy
+parents (indicated in blue), as described below in
+Section~\ref{mechanism}. Time-slicing relative to the specific parent 
+proton  bunch, i.e. on
+a bunch-to-bunch basis, produces different energy spectra in each
+time-slice. The spectra will also depend on the family type of the
+neutrino, as electrons and muons are produced in different rations
+from pions and kaons, and tau neutrinos, while rare, will be
+predominantly produced by short-lived parents.
+
+%
+% Section Fermilab Neutrino Infrastructure
+%
+\section{The Current Fermilab Neutrino Infrastructure}
+\label{Fermilab}
+
+We propose that modifications to the Fermilab Main Injector could
+superimpose a hyper-fine bunch structure on the protons, providing
+short enough bunches, spaced widely enough to fully exploit the energy
+spreading effect. No time measurement is necessary at the neutrino
+detectors.
+
+%
+%YOUAREHERE
+
+\subsection{The Main Injector and the 53 MHz Accelerating RF}
+
+Figure~\ref{fig:fermilab_facility_aerial} shows an aerial view of the Fermilab Accelerator complex.
+
+\begin{figure}[h]
+	\begin{center}
+           	\includegraphics[width=0.7 \linewidth]{Figures/fermilab_facility_07-0329-14D.jpg}
+	\end{center}
+	\caption{An aerial view of the Fermilab Accelerator complex.
+         The Main Injector, from which the protons are extracted onto
+         the neutrino target, is in the foreground. (Credit: Fermilab)}
+	\label{fig:fermilab_facility_aerial}
+\end{figure}
+
+
+
+\subsection{Proton Target, Neutrino Horn, and Decay Volume}
+%
+%YOUAREHERE
+Figure~\ref{fig:numi_horn} shows xxxx.
+\begin{figure}[h]
+	\begin{center}
+           	\includegraphics[width=1.0 \linewidth]{Figures/numi_horn_how_works.jpg}
+	\end{center}
+	\caption{The layout of the Fermilab NUMI neutrino production
+          target, focusing horn, decay region, and the Minerva experiment. (Credit: Minerva)}
+	\label{fig:numi_horn}
+\end{figure}
+
+
+
+\subsection{Properties of the Current Near and Far Detectors}
+\subsection{Constraints: The Abort Gap, Radiation Losses, Power}
+
+
+%
+% Section The Mechanism of Energy and Flavor Separation
+%
+
+\section{The Mechanism of Energy and Flavor Separation By Time-of-Arrival}
+\label{mechanism}
+
+The power of this technique stems from the fact that, in contrast to
+off-axis measurements, the different neutrino energy spectra can be
+selected within the same detector. Moreover, these timing
+relationships can be applied in near and far detector alike. 
+
+We emphasize that the time of individual neutrino events is determined
+by the position of the vertex with respect to the phase of the RF, and
+requires no time measurement capability in the detector
+itself. Instead, the RF
+structure is measured bunch-by-bunch by a 10-15 GHz waveform sampling
+system by the muon monitor system (MMS). The recorded stream of bunch 
+structure parameters or profiles is time-stamped and synchronized with
+the detector data as a separate operation.
+
+\begin{figure}[t]
+	\begin{center}
+        \includegraphics[width=1.0\linewidth]{Figures/2018.10.10_LBNFtiming/DUNEbeam_truetimingB.pdf}
+	\end{center}
+	\caption{The DUNE forward horn current flux (red), with the
+          fluxes corresponding to increasingly later time-cuts on the
+          bunch time, assuming no time spread of the protons on
+          target: 250 psec after the start of the neutrino bunch
+          (orange), 500 psec after (yellow), 750 psec (dark beige), 1
+          nsec (light beige).}
+		\label{fig:Dunebeam_truetimingB}
+\end{figure}
+
+
+\begin{figure}[t]
+	\begin{center}
+           	\includegraphics[width=0.8 \linewidth]{Figures/2018.11.07_LBNFtimingRHC/RHCbeamcontent_log.pdf}
+	\end{center}
+	\caption{The time spectrum of anti-neutrinos in reverse horn
+          current mode (blue) overlaid with wrong-sign neutrino
+          contamination in red. The wrong-sign component drops off
+          more quickly.}
+		\label{fig:RHCbeamcontent_log}
+\end{figure}
+
+\subsubsection{Derivation of Time Dispersion}
+
+The difference in arrival time of a neutrino from a sub-relativistic
+pion of energy E' with respect to a high energy pion traveling with
+speed $\sim$c is given by:
+
+\begin{equation}
+\Delta t(E') = \frac{c - v(E')}{c} \tau (E')
+\end{equation}
+
+Where $\tau (E')$ is the lifetime of the lower energy pion in the lab
+frame. The time spreading will only occur until the decay of the lower
+energy pion, at which point the daughter neutrinos will propagate at
+c. The lifetime of the higher energy pion is irrelevant, since the
+pion is already propagating at roughly c.
+
+\begin{equation}
+\Delta t(E') = \tau (E') [1 - \beta (E')]
+\end{equation}
+
+Rewriting in terms of the pion lifetime in the restframe, $\tau_0$, we get:
+
+\begin{equation}
+\Delta t(E') = \left(\frac{E'}{m} \tau_0\right) \left[1 - \sqrt{ 1 - \frac{m^2}{E'^2}} \right] 
+\end{equation}
+
+Regrouping the equation, we get the relationship:
+
+\begin{equation}
+\Delta t(E') = \left[\frac{E'}{m} - \sqrt{ \frac{E'^2}{m^2} - 1}\right] \tau_0
+\label{eq:beamkinematicsandtiming}
+\end{equation}
+
+As one would expect, at the lowest energies, where the pion is
+essentially at rest in the lab frame, $\Delta t(E')$ approaches the
+lifetime of the pion in the rest frame, $\tau_0$. At high energies,
+the speed of the lower-energy pion approaches that of the higher
+energy pion and thus $\Delta t(E')$ goes to zero.
+
+Figure~\ref{fig:beamkinematicsandtiming} shows a plot of
+equation~\ref{eq:beamkinematicsandtiming} (TOP), and the simulated
+relationship between $\Delta t(E')$ and E' for the DUNE beam.
+
+\begin{figure}[t]
+	\begin{center}
+           	\begin{tabular}{c c}
+           	\includegraphics[width=0.455
+                  \linewidth]{Figures/2018.12.3_kinematics/deltaTvsE.pdf}
+                & \includegraphics[width=0.49
+                  \linewidth]{Figures/2018.10.14_LBNFtiming/parentEvsdT.pdf}
+                \\ \multicolumn{2}{c}{\includegraphics[width=0.5
+                    \linewidth]{Figures/2018.10.14_LBNFtiming/nuEvsdT.pdf}}
+			\end{tabular}
+	\end{center}
+	\caption{TOP: A plot of the peak time difference between the arrival of neutrinos from a sub-relativistic pion of energy E' with respect to a relativistic pion (Eq~\ref{eq:beamkinematicsandtiming}). BOTTOM LEFT: The simulated relationship between the arrival times and pion energies, for a population of pions produced at the same time. BOTTOM RIGHT: The equivalents plot of arrival time difference for different energies of the neutrinos.}
+		\label{fig:beamkinematicsandtiming}
+\end{figure}
+
+
+\subsection{Impact of Bunch Size on the Effect}
+\label{bunch_size}
+
+Just showing that wider bunches wash out the effect (short section)
+
+\begin{figure}[t]
+	\begin{center}
+           	\begin{tabular}{c c}	
+           	\includegraphics[width=0.49
+                  \linewidth]{Figures/2018.10.10_LBNFtiming/DUNEbeam_truetimingB.pdf}
+                & \includegraphics[width=0.49
+                  \linewidth]{Figures/2018.10.10_LBNFtiming/DUNEbeam_100psecB.pdf}
+                \\ \includegraphics[width=0.49
+                  \linewidth]{Figures/2018.10.10_LBNFtiming/DUNEbeam_250psecB.pdf}
+                & \includegraphics[width=0.49
+                  \linewidth]{Figures/2018.10.10_LBNFtiming/DUNEbeam_900psecB.pdf}
+                \\
+			\end{tabular}
+	\end{center}
+	\caption{A series of panels showing the DUNE forward horn
+          current flux (red), overlaid with the fluxes corresponding
+          to increasingly later time-cuts on the bunch time, assuming
+          no time spread of the protons on target: 250 psec after the
+          start of the neutrino bunch (orange), 500 psec after
+          (yellow), 750 psec (dark beige), 1 nsec (light beige). The
+          UPPER LEFT panel corresponds to a case where all protons hit
+          the target instantaneously. The UPPER RIGHT panel
+          corresponds to a proton bunch with 100 psec width. The LOWER
+          left panel corresponds to a 250 psec bunch width and the
+          LOWER RIGHT corresponds to 900 psec.}
+		\label{fig:anniedetector}
+\end{figure}
+
+\clearpage
+%
+% Section: Time-Sorted Energy and Flavor Spectra
+%
+\section{Time-Sorted Energy and Flavor Spectra}
+\label{time_sorted_spectra}
+
+
+\subsection{Electron and Muon Neutrinos from $\pi$ and $K$ decay}
+\label{mu_e}
+
+\subsection{Tau Neutrinos}
+\label{taus}
+
+\subsection{Wrong Sign Contributions}
+\label{wrong_sign}
+
+\subsection{Between Bunches: Background Measurements and Searches}
+\label{backgrounds}
+
+%
+% Accelerator Considerations: Can One Rebunch the Protons at Higher RF Frequency?}
+%
+\section{Accelerator Modifications: Rebunching protons at a higher RF frequency}
+\label{RF}
+
+\subsection{Properties of the present 53.1MHz proton bunch}
+
+\subsection{Higher frequency RF structure and hardware}
+
+%\subsection{Other Constraints: Radiation Losses}
+
+\subsection{Example of a rebunching procedure in the Fermilab Main Injector}
+
+\begin{figure}[t]
+	\begin{center}
+        \includegraphics[width=1.0\linewidth]{Figures/draft_transition_voltages.JPG}
+	\end{center}
+	\caption{An example of the applied voltages to the 53.1MHz cavities (red) and the 531MHz cavity (pink). The 53.1MHz voltage function is a piece-wise function starting with linear decrease and then an adiabatic decrease using function *** down to 0 volts.}
+		\label{fig:transition_voltages}
+\end{figure}
+
+\begin{figure}[t]
+	\begin{center}
+        \includegraphics[width=1.0\linewidth]{Figures/draft_bunch_distributions.JPG}
+	\end{center}
+	\caption{Distribution of protons in energy spread vs. RF phase for the initial main injector proton bunch (red), the transition time between the two RF frequencies (green), and the end point after ramping the high frequency voltage (pink). This particular rebunching took a total of 50ms, a 4\% addition to the total cycle time.}
+		\label{fig:bunch_distributions}
+\end{figure}
+
+\begin{figure}[t]
+	\begin{center}
+        \includegraphics[width=1.0\linewidth]{Figures/draft_rms_vs_time.JPG}
+	\end{center}
+	\caption{The root-mean-square of the time distribution one of the thin, high-frequency bunches after going through a rebunching procedure that takes time $t$, where the x-axis is the ratio of $t$ to the present cycle time of $1.2$ seconds. Longer rebunching time corresponds to a reduction in POT because it increases the period between main injector dumps.}
+		\label{fig:bunch_width_curve}
+\end{figure}
+
+
+%\subsection{Other Constraints: Radiation Losses}
+
+\subsection{The Cornell 500 MHz Cavity and Simulated Performance}
+
+%
+% Section Muon Monitor
+%
+\section{Using Muons and Fast Photodetectors to Measure the Bunch-by-bunch Proton Intensity Profiles}
+\label{muon_monitor}
+\subsection{Muon Monitor System}
+\subsection{Photodetectors, Waveform Sampling, and Data Acquisition}
+
+%
+% Section: Synchronization of the Bunch Profile with the Neutrino
+% Interaction Time
+% 
+\section{Synchronization of the Bunch Profile with the Neutrino Interaction Time}
+\label{synchronization}
+
+\subsection{Time Stamps and Latency Budgets}
+\subsection{Local Clocks}
+\subsection{Synchronization of Local Clocks}
+\subsection{Monitoring and Verification}
+
+%YOUAREHERE
+%
+% Section Results
+%
+\section{Results}
+\label{results}
+Results...
+\subsection{Delta Function Proton Bunch}
+\subsection{Comparisons of 53 MHz and  500 MHz RF Structures}
+\subsubsection{Forward Horn Configuration}
+\subsubsection{Reverse Horn Configuration}
+\subsubsection{Tau Neutrinos}
+\subsection{Near vs Far Detector Considerations}
+
+%\newpage
+%
+% Section Conclusions
+%
+\section{Conclusions}
+\label{conclusions}
+We have...
+
+%\subsection{}
+
+\section{Acknowledgements}
+\label{thanks}
+
+\begin{thebibliography}{99}
+\bibitem{bibitem} bib1 
+%\bibitem{}
+\end{thebibliography}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{}
+%\label{}
+%\subsection{}
+%Section~\ref{
+\begin{figure}[h]
+	\begin{center}
+           	\includegraphics[width=0.7 \linewidth]{Figures/}
+	\end{center}
+	\caption{}
+	\label{fig:}
+\end{figure}
+
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+%% References
+%%
+%% Following citation commands can be used in the body text:
+%% Usage of \cite is as follows:
+%%   \cite{key}          ==>>  [#]
+%%   \cite[chap. 2]{key} ==>>  [#, chap. 2]
+%%   \citet{key}         ==>>  Author [#]
+
+%% References with bibTeX database:
+
+\bibliographystyle{model1-num-names}
+\bibliography{bibliography.bib}
+
+%% Authors are advised to submit their bibtex database files. They are
+%% requested to list a bibtex style file in the manuscript if they do
+%% not want to use model1-num-names.bst.
+
+%% References without bibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+% \bibitem{}
+
+% \end{thebibliography}
+
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-1-num.tex'.

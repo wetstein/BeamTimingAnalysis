@@ -1,0 +1,140 @@
+%
+% Simple Latex 2e template
+%
+\documentclass[12pt]{article}
+\usepackage[usenames,dvips]{pstcol}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{footnote}
+\usepackage{longtable}
+\usepackage{verbatim}
+\usepackage{array,multirow}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{epstopdf}
+
+\setcounter{secnumdepth}{4}
+%\titleformat{\paragraph}
+%{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+%\titlespacing*{\paragraph} {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+%
+\include{symbols}
+%
+\textwidth 6.5in
+\textheight 9.5in
+\topmargin -0.6in
+\oddsidemargin 0.0in
+\evensidemargin 0.0in
+\parindent 0.5in
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+%
+\def\baselinestretch{1.0}
+%
+\newcommand{\smaller}{\fontsize{8}{12}\selectfont}
+\newrgbcolor{maroon}{.45 0.1 0.1}
+%
+% Try making it behave with figures
+%
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+%
+\begin{document}
+\pagestyle{plain}
+\begin{flushright}
+Version 1.0\\
+\today\\
+HJF\\
+\end{flushright}
+%
+% Title
+
+Proposed List of Figures (work-in-progress- please edit, add, or delete):
+
+\begin{enumerate}
+%\setlength{\itemsep}{-0.03in}
+\item An artist's rendition of bunched neutrinos, created by protons
+with a 500 MHz RF structure, traversing a large detector.
+
+
+\item Current Fermilab LBNF physical layout (target/horn, decay region, near
+and far detectors).
+
+
+\item Current Fermilab 53 MHz RF structure and proposed 500 (530?) MHz structure.
+
+\item Current 53 Fermilab RF cavity and proposed 500 (530?) MHz RF
+Cornell-B? cavity.
+
+\item The width of the proton bunch after re-bunching as a function of
+adiabatic time constant for turning on the higher frequency RF.
+
+\item The fractional effective loss of protons on target (POT) 
+due to the longer cycle time as a function of the adiabatic time
+constant for turning on the higher frequency RF; (do we include the
+time to turn down the 53MHz, or is this included already?).
+
+\item The distribution of proton intensity in one bunch after a 500 MHz RF
+re-bunching, assuming a reduction of no more than 5\% of POT due to the longer
+acceleration cycle.
+
+\item Distributions of the number of events versus time relative to
+  the proton bunch of e, mu, and tau neutrinos and anti-neutrinos for
+  a delta-function proton bunch and Forward Horn Current (FHC) . The
+  distributions are shown for five energy bins in addition to the
+  total.
+
+\item Distributions of the number of events versus time relative to
+  the center of the proton bunch of e, mu, and tau anti-neutrinos and
+  neutrinos for a delta-function proton bunch and Reverse Horn Current
+  (RHC).  The distributions are shown for five energy bins in addition
+  to the total.
+
+\item Distributions of the number of events versus time relative to
+  the center of the proton bunch of e, mu, and tau neutrinos and
+  anti-neutrinos for Forward Horn Current (FHC) assuming the current
+  53 MHz RF bunch structure.
+
+\item Distributions of the number of events versus time relative to
+  the center of the proton bunch of e, mu, and tau anti-neutrinos and
+  neutrinos for Reverse Horn Current (RHC) assuming a 500 MHz RF bunch
+  structure.
+
+\item Fractions of e, mu, and tau neutrinos and anti-neutrinos in 50
+(upper-right panel), 100 (upper-left), 250(lower-left), and 500
+(lower-right) psec bins relative to a delta-function proton bunch.
+
+\item Fractions of e, mu, and tau neutrinos and anti-neutrinos captured
+in 50 psec (upper-right panel), 100 psec (upper-left), 250
+psec(lower-left), and 500 psec (lower-right) bins relative to a
+delta-function proton bunch.
+
+\item Fractions of e, mu, and tau neutrinos and anti-neutrinos
+  captured in 50 psec (upper-right panel), 100 psec (upper-left), 250
+  psec(lower-left), and 500 psec (lower-right) time bins with a 500
+  MHz RF structure. The binning is such that the central bin is
+  centered on the peak of the proton bucket distribution (it's late
+  and I'm muddled- this will need fixing- HJF).
+
+\item Fraction of `wrong-sign' anti-neutrino background in e, mu, and
+tau neutrinos for Forward Horn Current captured in 50 psec
+(upper-right panel), 100 psec (upper-left), 250 psec(lower-left), and
+500 psec (lower-right) time bins with a 500
+MHz RF structure. The binning is such that the central bin is
+  centered on the peak of the proton bucket distribution.
+
+
+\item Fraction of `wrong-sign' neutrino background in e, mu, and tau
+  anti-neutrinos for Reverse Horn Current captured in 50 psec
+  (upper-right panel), 100 psec (upper-left), 250 psec(lower-left),
+  and 500 psec (lower-right) bins with a 500 MHz RF structure. The
+  binning is such that the central bin is centered on the peak of the
+  proton bucket distribution.
+
+
+
+\end{enumerate}
+\end{document}

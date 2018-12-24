@@ -1,0 +1,105 @@
+
+% Section Muon Monitor
+%
+\section{Using Muons and Fast Photodetectors to Measure the Bunch-by-bunch Proton Intensity Profiles}
+\label{muon_monitor}
+
+The stroboscopic technique relies on the precise time relationship
+between a given proton parent bunch interacting in the target and the `grandchild' neutrino
+events detected in the neutrino detectors. We propose using fast
+photodetectors to measure the intensity profile of the proton
+interactions on a bunch-by-bunch basis with a resolution sufficient to
+allow `time-slicing' of the neutrino vertices in the detector for
+energy and flavor discrimination. For example, 10 psec resolution
+on the profile of each proton bunch would introduce little smearing in 100 psec
+time-slices at the neutrino detector.
+
+%\subsection{Muon Monitor Systems}
+
+The monitoring would be done with two conventional muon monitor
+systems, one at 90 degrees to the target in the Lab frame (the
+Transverse Muon Monitor System, or TMMS), and one
+embedded in the shielding at the end of the decay volume (the Forward
+Muon Monitor System, or FMMS). Each would
+consist of photodetectors and waveform sampling electronics capable of a
+time resolution on the order of 10 psec.
+
+
+%\subsubsection{Transverse Muon Monitor System (TMMS)}
+The transverse muon monitor system (TMMS) provides a bunch-by-bunch
+profile of the proton interactions in the target. The TMMS consists of
+a small area MCP-PMT Cherenkov telescope located on a vertical line to
+the target, with substantial shielding between the target and the
+counters. The telescope could be located above ground, or, as was done
+in Ref.~\cite{E100}, located in a cladded hole drilled into the
+ground, as determined by the rate and the desired momentum cut-off
+provided by the muon range in the transverse shielding.
+
+The TMMS views the proton bunches transversely, so that the time
+offsets in the longitudinal direction do not introduce biases in the
+proton bunch profile from energy-dependent effects. The flight path in
+the transverse direction can be made to be short. The smearing in time of
+hadron decay, even though independent of the longitudinal bunch
+profile, would wash out the bunch structure. In addition to the short
+decay path, the shielding in the
+transverse direction will provide a lower momentum cutoff for muons, and
+hence for parent hadrons, being determined by the minimum muon range
+required to reach the TMMS.
+
+%\subsubsection{Forward Muon Monitor System (FMMS)}
+The forward muon monitor system (FMMS) provides a
+bunch-by-bunch profile of muon neutrino production in the target. The
+TMMS would consist of a large-area `range stack' of large-area MCP-PMT
+photodetectors with precise time resolution, separated by shielding so
+as to measure the energy spectrum of the muons by range. In addition,
+each layer would consist of multiple \LAPPDTM modules in a transverse
+pattern capable of measuring the directional information as well
+as the time profile of the proton beam.
+
+The FMMS directly records the muon time of arrivals in each
+layer. The muon times are determined by the flight time of the parent
+hadrons in the same way as the neutrino times measured at the
+detector. As the mix of electron and muon neutrinos is energy and sign
+dependent, the FMMS provides additional family information as well as
+a stroboscopic measurement of the muon spectrum.
+
+%\subsection{Photodetectors, Waveform Sampling, and Data Acquisition}
+
+%
+% Section: Synchronization of the Bunch Profile with the Neutrino
+% Interaction Time
+% 
+%\subsection{Synchronization of the Bunch Profile with the Neutrino Interaction Time}
+%\label{synchronization}
+%\subsection{Time Stamps and Latency Budgets}
+%\subsection{Local Clocks}
+%\subsection{Synchronization of Local Clocks}
+%\subsection{Monitoring and Verification}
+The neutrinos arrive at both the near and far detectors before any
+electronics signal can propagate, creating a substantial latency
+between the proton bunch profile and the corresponding neutrino event profile.
+Consequently at both the target and the detector there needs to be a
+wave-form sampling and digital buffer with enough bandwidth to keep up
+with the RF bunch frequency and enough depth to allow for the latency,
+triggering, and readout. 
+
+Several standard schemes employed at high
+luminosity colliders and waveform sampling systems would mitigate high
+data rates. Local processing in FPGAs located in the front-end
+electronics allows sparcification and data compaction. Multiple buffering will allow deadtimeless
+operation.  FPGAs also allow prescaling, with a small fraction of
+bunches outputting the full sampling profile, with the bulk only
+transmitting as many fitted moments as prove necessary to monitor
+shapes over the time scale set by the prescale.
+
+The synchronization of the neutrino event with its parent proton bunch
+consequently is done with time stamps in both locations. This requires
+a master clock available to both locations. One solution is two
+synchronized atomic clocks, which have the requisite
+accuracy~\cite{atomic_clocks}. 
+
+Monitoring and verification of the synchronization is
+necessary~\cite{speedy_italians}. Accumulated data at the `edges' of the
+proton bunch train may verify that events only occur in occupied
+bunches, registered to the correct timing.
+
