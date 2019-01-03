@@ -3,20 +3,16 @@
 \label{RF}
 
 The proton bunch must have as small a duration as possible in order to
-select neutrino energies based on position/time of arrival at the
-detector (see section 9). This section describes one example of how to
-create longitudinally thin proton bunches with on the order of 100 ps
-time width in the Fermilab Main Injector (MI) with minimal changes to
-the existing accelerating infrastructure. Outputs from a simulation of
+select neutrino energies based on time of arrival at the
+detector (see section \ref{mechanism}). This section describes one example of how to
+create longitudinally thin proton bunches with time-widths on the order of 200 ps in the Fermilab Main Injector (MI) with minimal changes to the existing accelerating infrastructure. Outputs from a simulation of
 this re-bunching scheme are presented.
 
 
 \subsection{Properties of the present main injector proton bunch}
 The main injector is filled with protons from the booster ring which
 injects \textit{batches} of 8 GeV protons. Each batch contains 84 RF
-\textit{buckets} at 53.1MHz. The main injector ring has space to hold
-7 batches, or 588 buckets, but is only filled with 6 batches leaving an 
-\textit{abort gap} of 84 buckets for the \textit{kicker} which sends the
+\textit{buckets} at 53.1MHz. The MI has enough circumference to hold 7 batches, or 588 buckets, but is only filled with 6 batches leaving an \textit{abort gap} of 84 buckets for the \textit{kicker} which directs the
  beam into the NuMI target. Every 1.2 s (referred to below as the \textit{cycle
   time}), the kicker is engaged and 6 batches of protons are extracted
 into the NuMI target downstream, creating about 10 $\mu$s of bunched
@@ -26,20 +22,20 @@ The longitudinal position of a proton in the bunch changes depending
 on its momentum. Each proton in the bunch occupies a point in the
 phase space of RF phase $\phi$ (or longitudinal location in the bunch)
 and momentum relative to the synchronous particle momentum, $\delta =
-\mathrm{d}p/p_0$.
+\mathrm{d}p/p_0$. A particle with $\delta = 0$ will not change phase in the bunch over time. 
 
 Each main injector RF bucket is about 20 ns long but the protons occupy a small 
 fraction of the bucket. Protons from the booster enter the main injector with a
 $(\phi, \delta)$ phase-space area of about 0.2 eVs (95\% of particles). Each MI bunch
 is a combination of two slip-stacked booster bunches, which after acceleration leads to
-about 0.7-1 eVs of phase space area. This proton bunch is
+about 0.7 to 1 eVs of phase space area. This proton bunch is
 non-gaussian with an RMS time-width of about 900 ps (cite). At 1 eVs, this implies that 
 
 \begin{equation}
-\mathrm{d}p_{rms} \simeq \frac{1 [\texttt{eVs}]}{6\pi t_{rms}}  \simeq 37 \quad \texttt{MeV}
+\mathrm{d}p_{rms} = \frac{A}{6\pi t_{rms}} \simeq \frac{1 [\texttt{eVs}]}{6\pi\times 1 [\texttt{ns}]}  \simeq 53 \quad \texttt{MeV}
 \end{equation}
 
-or a $\delta$ of $3\times 10^{-4}$. An attempt to generate this initial particle distribution
+or a $\delta$ of $4.4\times 10^{-4}$. An attempt to generate this initial particle distribution
 is used in the simulations below and is shown in red in figure \ref{fig:bunch_distributions}.
 
 
@@ -47,7 +43,7 @@ is used in the simulations below and is shown in red in figure \ref{fig:bunch_di
 
 The main injector proton bunch will need to be re-bunched into a
 roughly 10-times higher frequency RF structure in order to achieve a
-goal of 100 ps bunch width for doing stroboscopic neutrino physics. An
+goal of 100 - 200 ps bunch width for doing stroboscopic neutrino physics. An
 insertion of only one such RF cavity into the existing ring would
 allow for higher frequency re-bunching.
 
@@ -73,7 +69,7 @@ impact to neutrino physics for a given loss in total POT.
 
 \subsubsection{Simulation equations}
 
-The simulation presented uses the paraxial approximation for
+The simulation presented uses the self-consistent beam
 longitudinal synchrotron motion in a circular accelerator:
 
 \begin{equation}
@@ -114,7 +110,7 @@ In a study of beam preparation for the Fermilab g-2 experiment,
 K.Y. Ng explores functions for adiabatic voltage changes of cavities
 that preserve area in longitudinal
 phase-space. \cite{adiabatic_capture}. One function that follows from
-the adiabaticity condition $\omega_s \gg \frac{1}{A} \frac{\mathrm{d}
+the adiabatic condition $\omega_s \gg \frac{1}{A} \frac{\mathrm{d}
   A}{\mathrm{d}t}$ is
 
 \begin{equation}
@@ -127,7 +123,7 @@ for ramping voltages up ($V_1 > V_0$), and
 V(t) = \frac{V_0}{[1 + (\sqrt{V_0/V_1} - 1)t/t_1]^2}
 \end{equation}
 
-for ramping voltages down. I will refer to these functions as
+for ramping voltages down. These functions will be referred to as
 \textit{adiabatic} voltage functions.
 
 An example of a re-bunching recipe is shown in figure
@@ -135,32 +131,56 @@ An example of a re-bunching recipe is shown in figure
 higher frequency cavity is set by the specifications of the cavities
 available from Research Instruments. The starting voltage of 2 MV for
 the 53.1 MHz structure is set by the operating parameters of the
-Fermilab main injector. Timescales of around 50 ms total will be
-needed to preserve 95\% of the POT for neutrino experiments.
+Fermilab main injector. Timescales of around 60 ms total will be
+needed to preserve 95\% of the POT for neutrino experiments, as the design cycle time is 1.2 seconds.
 
-\begin{figure}[t]
+
+\begin{figure}[h!]
 	\begin{center}
-        \includegraphics[width=0.60\linewidth]{Figures/draft_transition_voltages.JPG}
+        \includegraphics[width=0.60\linewidth]{Figures/transition_voltages.png}
 	\end{center}
-	\caption{An example of the applied voltages to the 53.1MHz
-          cavities (red) and the 531MHz cavity (pink). The 53.1MHz
-          voltage function is a piece-wise function starting with
-          linear decrease and then an adiabatic decrease using
-          function *** down to 0 volts.}
+	\caption{An example of the applied voltages to the 53.1 MHz
+          cavities (red) and the 500 MHz cavity (blue). Both are adiabatic voltage
+          ramp-up/ramp-down functions, where the 53.1 MHz cavities start at 1MV and
+          the 500 MHz cavities end at 2MV. Both cavities in the simulation have a minimum
+          voltage of 10 kV. In this example, there is 10 ms of time after the ramp-down has
+          ended and the ramp-up of the 500 MHz cavity begins.}
 		\label{fig:transition_voltages}
 \end{figure}
 
 \subsubsection{Results of one recipe for re-bunching}
 
+\begin{table}[h!]
+\begin{tabular}{|p{0.3\textwidth}|p{0.3\textwidth}|p{0.4\textwidth}|}\hline
+\textbf{Parameter} & \textbf{Value} & \textbf{Note} \\ \hline
+Beam particle mass & 938 MeV  & protons \\ \hline
+Synchronous momentum & 120 GeV & \\ \hline
+Transition gamma $\gamma _t$ & 20.4 & \\ \hline
+Harmonic number & 588 & 84 bucketes and 7 batches\\ \hline
+Number of simulated particles & $2\times10^5$ & \\ \hline
+Initial proton bunch $\delta$ & $3\times10^{-4}$ gaussian std & \\ \hline
+Initial proton bunch phase & 870ps with 2 ns halo gaussian stds & halo is 5\% of central particles \\ \hline \hline
+RF frequencies of cavities & 53.1 MHz and 500 MHz & 500 MHz used to match commercial cavity \\ \hline
+$V_0 ^{53}$ and $V_1 ^{53}$ & 1 MV and 10 kV & Voltages for adiabatic function, set to 0 V at endpoint \\ \hline
+$V_0 ^{500}$ and $V_1 ^{500}$ & 10 kV and 2 MV & Voltages for adiabatic function, set to 0 V at endpoint \\ \hline
+Time between voltage ramps & 10 ms & where both RF voltages are 0 V \\ \hline
+Resulting 1/e RF bucket egress into abort gap & XXX buckets & on either first bucket or last bucket \\ \hline
+\end{tabular}
+\caption{Parameters used in the simulation of synchrotron motion for re-bunching.}\label{tab:accsim_parameters}
+\end{table}
+
 Phase space distributions at various times are shown in figure
 \ref{fig:bunch_distributions} for a simulation that takes the voltages
 from figure \ref{fig:transition_voltages} as an input. The red
-particles represent a best estimate of the present-day proton
-distribution in the main injector before extraction.
+particles represent a best estimate of the present design proton
+distribution in the main injector before extraction. 
 
-\begin{figure}[t]
+Projections of the initial and final phase space variables
+are shown in figure \ref{fig:bunch_projections}. 
+
+\begin{figure}[h!]
 	\begin{center}
-        \includegraphics[width=0.60\linewidth]{Figures/draft_bunch_distributions.JPG}
+        \includegraphics[width=0.60\linewidth]{Figures/bunch_distributions.png}
 	\end{center}
 	\caption{Distribution of protons in energy spread vs. RF phase
           for the initial main injector proton bunch (red), the
@@ -171,19 +191,24 @@ distribution in the main injector before extraction.
 		\label{fig:bunch_distributions}
 \end{figure}
 
+\begin{figure}[h!]
+	\begin{center}
+        \includegraphics[width=0.60\linewidth]{Figures/bunch_projections.png}
+	\end{center}
+	\caption{Projection of the initial and final bunches onto the phase space variables $\phi$ and $\delta$. 
+	The final longitudinal position of particles extends out past the initial RF bucket window, and these
+	particles will be captured into neighboring RF buckets. The end-point buckets will leak particles into 
+	the abort gap for the kicker. 95\% of the particles will be contained within the first *** buckets of the abort gap on either side (see table \ref{tab:accsim_parameters})}
+		\label{fig:bunch_projections}
+\end{figure}
+
 The objective of the rampdown of the 53.1 MHz voltage amplitude is to
 create a thin line in $(\phi, \delta)$ phase-space. A thinner
 distribution before applying higher frequency cavity voltage will lead
 to smaller time-width bunches after the higher frequency cavity
-voltage reaches 2 MV. An example of this thin-line transition point is
-shown in green in figure \ref{fig:bunch_distributions}.
-
-It has been observed that the final thin bunch RMS time-width is
-relatively insensitive to the ramp-up time but highly sensitive to the
-$\mathrm{d}p/p_0$ spread at the time of ramp-up (cite Evan's
-technical/detailed write-up). The momentum spread at the transition
+voltage reaches 2 MV (cite Evan's technical write-up). The momentum spread at the transition
 time is largely dictated by the ramp-down functions and their time
-parameters. Therefore, the final time-width RMS was explored as a
+parameters. Therefore, the thin-bunch time-width RMS was explored as a
 function of total re-bunching time where the ramp-down time is varied.
 
 Figure \ref{fig:bunch_width_curve} plots the final RMS time-width as a
@@ -191,13 +216,12 @@ function of the total re-bunch time divided by the main injector cycle
 time. The fraction on the x-axis is equal to the loss in POT from
 time-on-target alone.
 
-\begin{figure}[t]
+\begin{figure}[h!]
 	\begin{center}
         \includegraphics[width=0.60\linewidth]{Figures/draft_rms_vs_time.JPG}
 	\end{center}
-	\caption{The root-mean-square of the time distribution one of
-          the thin, high-frequency bunches after going through a
-          rebunching procedure that takes time $t$, where the x-axis
+	\caption{The average thin-bunch time-width root-mean-square after going through a
+          re-bunching procedure that takes time $t$, where the x-axis
           is the ratio of $t$ to the present cycle time of $1.2$
           seconds. Longer re-bunching time corresponds to a reduction
           in POT because it increases the period between main injector
@@ -205,7 +229,7 @@ time-on-target alone.
 		\label{fig:bunch_width_curve}
 \end{figure}
 
-This simulation shows that bunch widths on the order of 100 ps may be
+This simulation shows that bunch widths on the order of 200 ps may be
 achieved given a single RF cavity at about 500 MHz and the properly
 optimized voltage functions for re-bunching without too much more than
 5\% loss in POT.

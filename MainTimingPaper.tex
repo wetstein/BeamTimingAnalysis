@@ -19,6 +19,39 @@
 \documentclass[preprint,12pt]{elsarticle}
 
 \usepackage{isotope} % \isotope command
+\usepackage{cleveref}
+\usepackage{tabularx}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[nowatermark]{fixmetodonotes}
+\usepackage{comment}
+\usepackage{siunitx}
+% Use an ordinary space between a number and its associated unit
+\sisetup{number-unit-product=\ }
+% Start grouping digits into threes (with a space separator) for any
+% number with four or more digits
+\sisetup{group-minimum-digits = 4}
+% Always express uncertainties as a separate number (not parenthesized digits)
+\sisetup{separate-uncertainty = true}
+% Don't use a space between a number and the percent sign
+\DeclareSIUnit[number-unit-product = ]\percent{\char`\%}
+% Custom units for this paper
+\DeclareSIUnit\foot{ft}
+\DeclareSIUnit\inch{inch}
+\DeclareSIUnit\pot{POT}
+\DeclareSIUnit\year{years}
+\DeclareSIUnit\ADC{ADC\ counts}
+\DeclareSIUnit\spill{spill}
+\DeclareSIUnit\ton{t}
+
+\usepackage{booktabs}
+\usepackage{cleveref}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage[inline]{enumitem}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
 
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
@@ -163,25 +196,25 @@ Timing \sep Timing, Neutrino \sep Neutrino, Oscillation \sep Oscillation, RF-Str
 \section{Acknowledgements}
 \label{thanks}
 
-\begin{thebibliography}{99}
-\bibitem{bibitem} bib1 
+%\begin{thebibliography}{99}
+%\bibitem{bibitem} bib1 
 %\bibitem{}
-\end{thebibliography}
+%\end{thebibliography}
 
-\end{document}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{}
 %\label{}
 %\subsection{}
 %Section~\ref{
-\begin{figure}[h]
-	\begin{center}
-           	\includegraphics[width=0.7 \linewidth]{Figures/}
-	\end{center}
-	\caption{}
-	\label{fig:}
-\end{figure}
+%\begin{figure}[h]
+%	\begin{center}
+%           	\includegraphics[width=0.7 \linewidth]{Figures/}
+%	\end{center}
+%	\caption{}
+%	\label{fig:}
+%\end{figure}
 
 
 %% The Appendices part is started with the command \appendix;
