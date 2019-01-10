@@ -48,3 +48,20 @@ RHCbeamE: The RHC beam energy spectrum for antineutrinos (blue) and neutrinos (r
 RHCbeamE_100psec_cut: same plot, but requiring neutrino arrival times after 100 psec
 
 RHCbeamE_200psec_cut: same plot, but requiring neutrino arrival times after 200 psec
+
+### December 3 2018 figures
+
+
+
+#### January 3 2019 figures
+
+outputhists.root contains the outputs of OutTreePlotMaker
+
+EnergySpectrumInTime shows 3 bunches color coded corresponding to average beam energy versus times
+EnergySpectrumInTime_singlebunch shows the color spectrum zoomed in on a single bunch
+TimeSpectrum shows the time profile of 3 bunches
+TimeSpectrum_singlebunch shows the time profile zoomed in on a single bunch
+
+NuFlava shows the fractional flavor composition of the beam in time.
+
+NuParent shows the fractional composition of parent particles in time.
