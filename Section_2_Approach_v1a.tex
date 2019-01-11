@@ -74,20 +74,35 @@ for each bunch.
 \label{spectra}
 
 
-Figure~\ref{fig:wave_fronts} also indicates the `stroboscopic' nature
-of this proposal. Neutrinos from lower energy hadron parents
-(indicated in red) arrive in a distribution that tends 
-later than neutrinos from higher energy
-parents (indicated in blue), as described below in
-Section~\ref{mechanism}. Time-slicing relative to the specific parent 
-proton  bunch, i.e. on
-a bunch-to-bunch basis, produces different energy spectra in each
+Figure~\ref{fig:wave_fronts} also indicates the `stroboscopic' nature of this proposal. Neutrinos from lower energy hadron parents (indicated in red) arrive in a distribution that tends later than neutrinos from higher energy
+parents (indicated in blue), as described below in Section~\ref{mechanism}. Time-slicing relative to the specific parent proton  bunch, i.e. on a bunch-to-bunch basis, produces different energy spectra in each
 time-slice. The spectra will also depend on the family type of the
 neutrino, as electrons and muons are produced in different rations
 from pions and kaons, and tau neutrinos, while rare, will be
 predominantly produced by short-lived parents.
 
+To illustrate the potential value of this approach, the left panel of Fig~\ref{fig:timeslices1} shows the simulated beam energy spectrum for different selection cuts with respect to the start time of the neutrino bunch in Forward Horn Current (FHC) operation of the LBNF beam. Similarly, the right panel Fig~\ref{fig:timeslices1} shows the fractional composition of the different sign and flavor components of the bem in Reverse Horn Current (RHC) mode. 
+
+The ability to use timing to select different flavor and energy components of the neutrino beam will provide a strong  handle for controlling beam and cross section systematics, understanding and controlling backgrounds, and demonstrating the robustness of oscillation measurements.
+
+\begin{figure}[t]
+	\begin{center}
+        	\begin{tabular}{c c}
+        \includegraphics[width=0.5\linewidth]{Figures/DUNEbeam_truetimingB.pdf} &
+        \includegraphics[width=0.5\linewidth]{Figures/wrongsigncomposition_RHC.pdf} \\
+	\end{tabular}
+	\end{center}
+	\caption{LEFT: The simulated  DUNE forward horn current flux (red), with the
+          fluxes corresponding to increasingly later time-cuts on the
+          bunch time, assuming no time spread of the protons on
+          target: 250 psec after the start of the neutrino bunch
+          (orange), 500 psec after (yellow), 750 psec (dark beige), 1
+          nsec (light beige). RIGHT: The fractional composition of the beam in reverse horn current as a function of time, for muon antineutrinos (light yellow), wrong-sign contributions of muon neutrinos (orange), and electron neutrinos (red). }
+		\label{fig:timeslices1}
+\end{figure}
+
 \subsection{Derrivation of the Effect}
+\label{mechanism}
 
 The difference in arrival time of a neutrino from a sub-relativistic
 pion of energy E' with respect to a high energy pion traveling with
@@ -152,7 +167,15 @@ relationship between $\Delta t(E')$ and E' for the DUNE beam.
 
 
 \subsection{Achieving Sufficiently Short Proton Bunch Size}
-\label{spectra}
+\label{protonbunchsize}
+
+The differentiation of pion energies based on the neutrino arrival time spectrum is tightly peaked in time, with a broad tail. This timing affect is smeared out by the time spread of the proton bunch impinging on the target. Fig~ref{} shows the affect of different proton bunch widths on... At the roughly 1 nsec bunch widths typical of the Fermilab neutrino facilities the correlation between timing and energy is mostly washed out except for a small, low-statistics tail. Bunch sizes of roughly 100 psec would largely preserve the time-energy structure of the beam. Fully exploiting the stroboscopic techniques in the paper would require much shorter bunch sizes, approaching 100 psec. Compressing the existing bunch structure in time is technically feasible do to phase-space limitations among other considerations.
+
+Fortunately, it is possible to rebunch the beam, superimposing a higher frequency substructure. With conventional RF technology one could adiabatically change the beam from $\sim$1 nsec bunches spaced every 100 nsec into $\sim$100 psec bunches spaced by 10 nsec. This structure would simultaneously yield bunches that are both short enough and widely spaced enough to capture the energy and flavor affects. 
+
+In the following sections, we will outline the technical steps...
+
+ 
 
 
 % End Section 2
